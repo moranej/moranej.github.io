@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Morteza Rakhshaninejad</title>
+  <!-- Optional: nice, readable font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/style.css" />
 </head>
 <body>
-  <header>
-    <img src="static/Header.jpg" alt="Header banner" class="header-image" />
-    <div class="header-text">
-      <img src="static/Morteza Pic Col Scholar.JPG" alt="Morteza Rakhshaninejad" class="profile-pic" />
-      <h1>Morteza Rakhshaninejad</h1>
-      <p>PhD in Information Technology | Machine Learning & Computational Biology</p>
+  <header class="hero">
+    <img src="static/Header.jpg" alt="Geometric decorative header" class="hero__bg" />
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content container">
+      <img src="static/Morteza%20Pic%20Col%20Scholar.JPG" alt="Morteza Rakhshaninejad" class="avatar" />
+      <h1 class="title">Morteza Rakhshaninejad</h1>
+      <p class="subtitle">PhD in Information Technology · Machine Learning · Computational Biology</p>
+      <!-- (Optional) quick links
+      <nav class="quicklinks">
+        <a href="#about">About</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      -->
     </div>
   </header>
 
-  <main>
-    <section>
+  <main class="container">
+    <section id="about" class="card">
       <h2>About Me</h2>
       <p>
         I am <strong>Morteza Rakhshaninejad</strong>, a Ph.D. candidate in Information Technology.
@@ -27,27 +40,26 @@
       </p>
     </section>
 
-    <section>
+    <section id="teaching" class="card">
       <h2>Teaching Experience</h2>
       <p>
         I have served as a <strong>Teaching Assistant</strong> for the
         <em>Combinatorial Optimization</em> course for the past <strong>five years</strong>,
-        assisting students in understanding and applying key optimization algorithms
-        and problem-solving techniques.
+        assisting students in understanding and applying key optimization algorithms and problem-solving techniques.
       </p>
     </section>
 
-    <section>
+    <section id="contact" class="card">
       <h2>Contact</h2>
       <p>
-        You can find me on <a href="https://github.com/moranej" target="_blank">GitHub</a> or
-        reach out via email at m_rakhshaninejad [AT] ind.iust.ac.ir</a>.
+        You can find me on <a href="https://github.com/moranej" target="_blank" rel="noopener">GitHub</a>,
+        or email me at <a href="mailto:m_rakhshaninejad@ind.iust.ac.ir">m_rakhshaninejad@ind.iust.ac.ir</a>.
       </p>
     </section>
   </main>
 
-  <footer>
-    © 2025 Morteza Rakhshaninejad
+  <footer class="footer">
+    <div class="container">© 2025 Morteza Rakhshaninejad</div>
   </footer>
 </body>
 </html>
